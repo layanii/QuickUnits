@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BlogComponent } from './blog.component';
+import { ConvertLengthComponent } from './convert-length.component';
 
-describe('BlogComponent', () => {
-  let component: BlogComponent;
-  let fixture: ComponentFixture<BlogComponent>;
+describe('ConvertLengthComponent', () => {
+  let component: ConvertLengthComponent;
+  let fixture: ComponentFixture<ConvertLengthComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [BlogComponent]
+      declarations: [ConvertLengthComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BlogComponent);
+    fixture = TestBed.createComponent(ConvertLengthComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,8 @@
+.gradient-bg {
+    background: linear-gradient(135deg, #324f2a, #7f8b82);
+   
+  }
+  .container {    
+    height: 900px;
+    flex: 1;
+  }

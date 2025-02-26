@@ -5,16 +5,21 @@ import { AboutComponent } from './about/about.component';
 import { error } from 'console';
 import { ErrorpathComponent } from './errorpath/errorpath.component';
 import { ConvercurrancyComponent } from './convercurrancy/convercurrancy.component';
-import { BlogComponent } from './blog/blog.component';
+
+import { ConvertLengthComponent } from './convert-length/convert-length.component';
+import { WeightConverterComponent } from './weight-converter/weight-converter.component';
 
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  {path: 'blog', component: BlogComponent },
+  { path: '', component: HomeComponent },
+
   { path: 'about', component: AboutComponent },
-  { path: 'convercurrancy', component: ConvercurrancyComponent },
-  { path: '**', component: ErrorpathComponent }
+  { path: 'convertCurrancy', component: ConvercurrancyComponent },
+  { path: 'convertLength', component: ConvertLengthComponent },
+  { path: 'convertWeight', component: WeightConverterComponent },
+  { path: '**', component: ErrorpathComponent },
+ 
 ];
 
 @NgModule({

@@ -1,4 +1,25 @@
 
+<div class="gradient-bg">
+<div class="container">
+  <h1 class="display-2 text-start mb-5" style="color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">
+    Easy Unit Converter
+  </h1>
 
-<h1 class="alert alert-success text-center mt-3">home works!
-</h1>
+<div class="card-container">
+  <div class="card" (click)="selectUnit('currency')" [routerLink]="['/convertCurrancy']">
+     <img [src]="units[0].icon" alt="Currency" >
+    <h3>Currency</h3>
+  </div>
+
+  <div class="card" (click)="selectUnit('length')" [routerLink]="['/convertLength']">
+    <img [src]="units[1].icon" alt="Length">
+    <h3>Length</h3>
+  </div>
+
+  <div class="card" (click)="selectUnit('weight')" [routerLink]="['/convertWeight']">
+    <img [src]="units[2].icon" alt="Weight">
+    <h3>Weight</h3>
+  </div>
+</div>
+
+</div></div>

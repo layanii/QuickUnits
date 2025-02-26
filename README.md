@@ -1,4 +1,5 @@
-# MyAngularApp162
+# QuickUnits 
+is a simple and user-friendly unit converter that allows you to convert between different units of measurement. Whether you need to convert currency, length, or weight, QuickUnits has you covered !
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.6.
 

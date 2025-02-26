@@ -1,0 +1,49 @@
+
+
+
+  
+<div class="gradient-bg">
+  <div class="container py-5">
+    <div class="col">
+      <div class="card">
+        <div class="card-body shadow" >
+          <h3 class="text-center">Length Converter</h3>
+
+          <div class="row">
+            <div class="col">
+              <label for="from">From</label>
+              <select class="form-control" id="from" [(ngModel)]="fromUnit" (change)="convertLength()">
+                <option *ngFor="let unit of lengthUnits" [value]="unit">{{ unit }}</option>
+              </select>
+            </div>
+
+            <div class="col text-center mt-4">
+              <button class="btn btn-secondary" (click)="swapUnits()">⇆</button>
+            </div>
+
+            <div class="col">
+              <label for="to">To</label>
+      <select class="form-control" id="to" [(ngModel)]="toUnit" (change)="convertLength()">
+        <option *ngFor="let unit of lengthUnits" [value]="unit">{{ unit }}</option>
+      </select>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-sm-4">
+              <label for="length" style="font-weight: bold;">Enter Value:</label>
+              <input type="number" class="form-control shadow" id="length" [(ngModel)]="inputValue" (input)="convertLength()" placeholder="Enter value">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <h5 class="alert alert-success text-center mt-3"> {{ result ? result + ' ' + toUnit : '' }}</h5>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
