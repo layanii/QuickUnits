@@ -175,7 +175,7 @@ fromconvert: string ="USD";
 toconvert: string="SAR";
 data:any ;
 
-amount: string = "";
+amount: string = "0";
 ngOnInit() {
   // console.log("العملات عند التحميل:", this.currancy);
   console.log("currencies on load:", this.currancy);
@@ -199,7 +199,7 @@ getCurrencyData() {
       } else {
         console.error('Error:', result.error.info);
         // this.result = 'خطأ في التحويل';
-        this.result = "error in convert";
+     
       }
     })
     .catch(error => {
